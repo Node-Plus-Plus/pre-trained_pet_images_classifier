@@ -1,0 +1,83 @@
+Command Line Arguments:
+     dir = uploaded_images/ 
+    arch = vgg 
+ dogfile = dognames.txt
+filename is already exist >> filename : kitty_551.jpg ,pet_label : ['kitty']
+filename is already exist >> filename : dog_2029.jpg ,pet_label : ['dog']
+filename is already exist >> filename : puppy_640.jpg ,pet_label : ['puppy']
+filename is already exist >> filename : adorable_40.jpg ,pet_label : ['adorable']
+
+Pet Image Label Dictionary has 4 key-value pairs.
+Below are 4 of them:
+ 1 key:                  kitty_551.jpg  label:                      kitty
+ 2 key:                   dog_2029.jpg  label:                        dog
+ 3 key:                  puppy_640.jpg  label:                      puppy
+ 4 key:                adorable_40.jpg  label:                   adorable
+
+     MATCH:
+
+ NOT A MATCH:
+
+                 kitty_551.jpg: 
+Real:                      kitty   Classifier:                           lynx
+
+                  dog_2029.jpg: 
+Real:                        dog   Classifier:               english foxhound
+
+                 puppy_640.jpg: 
+Real:                      puppy   Classifier:              samoyed, samoyede
+
+               adorable_40.jpg: 
+Real:                   adorable   Classifier:              yorkshire terrier
+
+# Total Images 4 # Matches: 0 # NOT Matches: 4
+
+     MATCH:
+
+ NOT A MATCH:
+
+                 kitty_551.jpg: 
+Real:                      kitty   Classifier:                           lynx  
+PetLabelDog: 0  ClassLabelDog: 0
+
+                  dog_2029.jpg: 
+Real:                        dog   Classifier:               english foxhound  
+PetLabelDog: 1  ClassLabelDog: 1
+
+                 puppy_640.jpg: 
+Real:                      puppy   Classifier:              samoyed, samoyede  
+PetLabelDog: 0  ClassLabelDog: 1
+
+               adorable_40.jpg: 
+Real:                   adorable   Classifier:              yorkshire terrier  
+PetLabelDog: 0  ClassLabelDog: 1
+
+# Total Images 4 # Matches: 0 # NOT Matches: 4
+
+ ** Statistics from calculates_results_stats() function:
+N Images:  4  N Dog Images:  1  N NotDog Images:  3 
+Pct Corr dog: 100.0 Pct Corr NOTdog:  33.3  Pct Corr Breed:   0.0
+
+ ** Check Statistics - calculated from this function as a check:
+N Images:  4  N Dog Images:  1  N NotDog Images:  3 
+Pct Corr dog: 100.0 Pct Corr NOTdog:  33.3  Pct Corr Breed:   0.0
+
+
+*** Results Summary for CNN Model Architecture VGG ***
+N Images            :   4
+N Dog Images        :   1
+N Not-Dog Images    :   3
+ 
+pct_match : 0.0
+pct_correct_dogs : 100.0
+pct_correct_breed : 0.0
+pct_correct_notdogs : 33.33333333333333
+
+INCORRECT Dog/NOT Dog Assignments:
+Missclassified Pet_label :puppy , Classifier_label :samoyed, samoyede
+Missclassified Pet_label :adorable , Classifier_label :yorkshire terrier
+
+INCORRECT Dog Breed Assignment:
+Real:                        dog   Classifier:               english foxhound
+
+** Total Elapsed Runtime: 0:0:3
